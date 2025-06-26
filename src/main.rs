@@ -9,4 +9,4 @@ mod models;
 mod ws;
 
 use crate::db::DbConnection;
-use crate::ws:WsConnection;
+use crate::ws::WsConnection;

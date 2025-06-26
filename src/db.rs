@@ -49,7 +49,7 @@ impl DbConnection {
         let cols = stmt.column_count();
         let column_names: Vec<String> = stmt.column_names().iter().map(|c| c.to_string()).collect();
 
-        let mut ros = Vec::new();
+        let mut rows = Vec::new();
         let mut stmt_iter = stmt.query([])?;
 
         while let Some(row) = stmt_iter.next()? {
